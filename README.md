@@ -3,6 +3,6 @@
 
 **Name:** Maya Agge
 
-**Period:** 4
+**Period:** 2
 
 **Email:** mayaa71@nycstudents.net
