@@ -38,11 +38,11 @@ public class Triangle{
     }
   }
   public String toString(){
-    s = "{" + (this.getVertex(1)).toString() + ", " + (this.getVertex(2)).toString() + ", " + (this.getVertex(3)).toString() +"}";
+    String s = "{" + (this.getVertex(1)).toString() + ", " + (this.getVertex(2)).toString() + ", " + (this.getVertex(3)).toString() +"}";
     return s;
   }
   public double getPerimeter(){
-    perimeter = distance(v1, v2) + distance(v1, v3) + distance(v2, v3);
+    double perimeter = Point.distance(v1, v2) + Point.distance(v1, v3) + Point.distance(v2, v3);
     return perimeter;
   }
 }
