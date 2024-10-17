@@ -22,7 +22,7 @@ public class Triangle{
     if (v==2){
       return v2;
     }
-    if (v == 3){
+    else{
       return v3;
     }
   }
