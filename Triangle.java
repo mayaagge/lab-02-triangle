@@ -28,13 +28,13 @@ public class Triangle{
   }
   public void setVertex(int v, Point p){
     if (v == 1){
-      p.v1 = v1;
+      p.v = v1;
     }
     if (v==2){
-      p.v2 = v2;
+      p.v = v2;
     }
     if (v == 3){
-      p.v3 = v3;
+      p.v = v3;
     }
   }
   public String toString(){
