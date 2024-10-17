@@ -24,9 +24,9 @@ public class Driver{
     double sameDistance2 = p2.distanceTo(p3);
     double distance3 = Point.distance(p1, p3);
     double sameDistance3 = p1.distanceTo(p3);
-    System.out.println("Distance from p1 to p2 is " + distance1 + "which is the same as " + sameDistance1);
-    System.out.println("Distance from p2 to p3 is " + distance2 + "which is the same as " + sameDistance2);
-    System.out.println("Distance from p1 to p3 is " + distance3 + "which is the same as " + sameDistance3);
+    System.out.println("Distance from p1 to p2 is " + distance1 + " which is the same as " + sameDistance1);
+    System.out.println("Distance from p2 to p3 is " + distance2 + " which is the same as " + sameDistance2);
+    System.out.println("Distance from p1 to p3 is " + distance3 + " which is the same as " + sameDistance3);
     
     // Create Triangle objects and test the methods
     Triangle t1 = new Triangle(0.0,0.0,6.0,8.0,0.0,8.0);
