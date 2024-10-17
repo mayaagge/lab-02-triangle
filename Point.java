@@ -28,19 +28,22 @@ public class Point{
   */
   public String toString(){
     // YOUR CODE HERE
-    return "";
+    s = "(" + this.getX() + ", " + this.get(Y) + ")";
+    return s;
   }
   
   public double distanceTo(Point other){
     // YOUR CODE HERE
-    return 0.0;
+    double d = distance(this, other);
+    return d;
   }
 
   // CLASS METHODS - STATIC METHODS
   
   public static double distance(Point a, Point b){
    // YOUR CODE HERE
-    return 0.0;
+    distancePoint = Math.pow(Math.pow((a.getX() - b.getX()),2.0) + Math.pow((a.getY() - b.getY()),2.0),0.5);
+    return distancePoint;
   }
 
 }
