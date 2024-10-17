@@ -41,8 +41,8 @@ public class Triangle{
     s = "{" + (this.getVertex(1)).toString() + ", " + (this.getVertex(2)).toString() + ", " + (this.getVertex(3)).toString() +"}";
     return s;
   }
-  public static double getPerimeter(){
-    perimeter = v1.distanceTo(v2) + v2.distanceTo(v3) + v3.distanceTo(v1);
+  public double getPerimeter(){
+    perimeter = distance(v1, v2) + distance(v1, v3) + distance(v2, v3);
     return perimeter;
   }
 }
