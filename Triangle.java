@@ -1,6 +1,6 @@
 public class Triangle{
   // Instance Variables
-  private Point v1, v2, v2;
+  private Point v1, v2, v3;
   
   // Constructors
   public Triangle(double x1, double y1, double x2, double y2, double x3, double y3){
@@ -28,13 +28,13 @@ public class Triangle{
   }
   public void setVertex(int v, Point p){
     if (v == 1){
-      p.getVertex(1) = v1;
+      p.v1 = v1;
     }
     if (v==2){
-      p.getVertex(2) = v2;
+      p.v2 = v2;
     }
     if (v == 3){
-      p.getVertex(3) = v3;
+      p.v3 = v3;
     }
   }
   public String toString(){
