@@ -28,7 +28,7 @@ public class Point{
   */
   public String toString(){
     // YOUR CODE HERE
-    s = "(" + this.getX() + ", " + this.getY() + ")";
+    String s = "(" + this.getX() + ", " + this.getY() + ")";
     return s;
   }
   
