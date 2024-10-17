@@ -18,12 +18,12 @@ public class Driver{
     System.out.println("Coordinates: " + p3.toString());
     
     // Calculate distances and print results
-    distance1 = Point.distance(p1, p2);
-    sameDistance1 = p2.distanceTo(p1);
-    distance2 = Point.distance(p2, p3);
-    sameDistance2 = p2.distanceTo(p3);
-    distance3 = Point.distance(p1, p3);
-    sameDistance3 = p1.distanceTo(p3);
+    double distance1 = Point.distance(p1, p2);
+    double sameDistance1 = p2.distanceTo(p1);
+    double distance2 = Point.distance(p2, p3);
+    double sameDistance2 = p2.distanceTo(p3);
+    double distance3 = Point.distance(p1, p3);
+    double sameDistance3 = p1.distanceTo(p3);
     System.out.println("Distance from p1 to p2 is " + distance1 + "which is the same as " + sameDistance1);
     System.out.println("Distance from p2 to p3 is " + distance2 + "which is the same as " + sameDistance2);
     System.out.println("Distance from p1 to p3 is " + distance3 + "which is the same as " + sameDistance3);
