@@ -41,7 +41,8 @@ public class Driver{
     System.out.println("Perimeter " + t2.getPerimeter());
     System.out.println("Perimeter " + t3.getPerimeter());
     System.out.println("Perimeter " + t4.getPerimeter());
-    newTriangle = t1.setVertex(2, Point(3.0,4.0));
+    Point newPoint = new Point(3.0,4.0)
+    newTriangle = t1.setVertex(2, newPoint);
     System.out.println("New triangle coordinates: " + t1.toString());
     System.out.println("New perimeter " + t1.getPerimeter());
   
