@@ -30,7 +30,7 @@ public class Driver{
     
     // Create Triangle objects and test the methods
     Triangle t1 = new Triangle(0.0,0.0,6.0,8.0,0.0,8.0);
-    Triangle t2 = = new Triangle(p1, p2, p3);
+    Triangle t2 = new Triangle(p1, p2, p3);
     Triangle t3 = new Triangle(0.0,0.0,0.0,0.0,0.0,0.0);
     Triangle t4 = new Triangle(0.0,1.0,0.0,2.0,0.0,3.0);
     System.out.println("Triangle coordinates: " + t1.toString());
@@ -41,7 +41,7 @@ public class Driver{
     System.out.println("Perimeter " + t2.getPerimeter());
     System.out.println("Perimeter " + t3.getPerimeter());
     System.out.println("Perimeter " + t4.getPerimeter());
-    newTriangle = t1.setVertex(2, Point 3.0,4.0);
+    newTriangle = t1.setVertex(2, Point(3.0,4.0));
     System.out.println("New triangle coordinates: " + t1.toString());
     System.out.println("New perimeter " + t1.getPerimeter());
   
