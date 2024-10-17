@@ -31,8 +31,8 @@ public class Driver{
     // Create Triangle objects and test the methods
     Triangle t1 = new Triangle(0.0,0.0,6.0,8.0,0.0,8.0);
     Triangle t2 = new Triangle(p1, p2, p3);
-    Triangle t3 = new Triangle(0.0,0.0,0.0,0.0,0.0,0.0);
-    Triangle t4 = new Triangle(0.0,1.0,0.0,2.0,0.0,3.0);
+    Triangle t3 = new Triangle(-1.0,0.0,-3.4,5.1,-7.0,6.0);
+    Triangle t4 = new Triangle(0.0,1.0,1.0,2.0,7.0,3.0);
     System.out.println("Triangle coordinates: " + t1.toString());
     System.out.println("Triangle coordinates: " + t2.toString());
     System.out.println("Triangle coordinates: " + t3.toString());
