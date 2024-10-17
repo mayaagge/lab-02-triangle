@@ -13,13 +13,47 @@ public class Driver{
     Point p3 = new Point(0.0, 0.0);
 
     // Print coordinates using your toString method from Point class
+    System.out.println("Coordinates: " + p1.toString());
+    System.out.println("Coordinates: " + p2.toString());
+    System.out.println("Coordinates: " + p3.toString());
     
     // Calculate distances and print results
-
-    // Create Triangle objects and test the methods
+    distance1 = Point.distance(p1, p2);
+    sameDistance1 = p2.distanceTo(p1);
+    distance2 = Point.distance(p2, p3);
+    sameDistance2 = p2.distanceTo(p3);
+    distance3 = Point.distance(p1, p3);
+    sameDistance3 = p1.distanceTo(p3);
+    System.out.println("Distance from p1 to p2 is " + distance1 + "which is the same as " + sameDistance1);
+    System.out.println("Distance from p2 to p3 is " + distance2 + "which is the same as " + sameDistance2);
+    System.out.println("Distance from p1 to p3 is " + distance3 + "which is the same as " + sameDistance3);
     
+    // Create Triangle objects and test the methods
+    Triangle t1 = new Triangle(0.0,0.0,6.0,8.0,0.0,8.0);
+    Triangle t2 = = new Triangle(p1, p2, p3);
+    Triangle t3 = new Triangle(0.0,0.0,0.0,0.0,0.0,0.0);
+    Triangle t4 = new Triangle(0.0,1.0,0.0,2.0,0.0,3.0);
+    System.out.println("Triangle coordinates: " + t1.toString());
+    System.out.println("Triangle coordinates: " + t2.toString());
+    System.out.println("Triangle coordinates: " + t3.toString());
+    System.out.println("Triangle coordinates: " + t4.toString());
+    System.out.println("Perimeter " + t1.getPerimeter());
+    System.out.println("Perimeter " + t2.getPerimeter());
+    System.out.println("Perimeter " + t3.getPerimeter());
+    System.out.println("Perimeter " + t4.getPerimeter());
+    newTriangle = t1.setVertex(2, Point 3.0,4.0);
+    System.out.println("New triangle coordinates: " + t1.toString());
+    System.out.println("New perimeter " + t1.getPerimeter());
   
     /*************     ADD MORE TEST CASES HERE    *************/
 
   }
 }
+/*
+Test Cases
+
+Create multiple triangles to test your code, more than 3 cases.
+Test each method on different triangles
+Change each vertex, and test your methods
+Check the perimeter calculation
+  */
