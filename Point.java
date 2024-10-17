@@ -28,7 +28,7 @@ public class Point{
   */
   public String toString(){
     // YOUR CODE HERE
-    s = "(" + this.getX() + ", " + this.get(Y) + ")";
+    s = "(" + this.getX() + ", " + this.getY() + ")";
     return s;
   }
   
@@ -42,7 +42,7 @@ public class Point{
   
   public static double distance(Point a, Point b){
    // YOUR CODE HERE
-    distancePoint = Math.pow(Math.pow((a.getX() - b.getX()),2.0) + Math.pow((a.getY() - b.getY()),2.0),0.5);
+    double distancePoint = Math.pow(Math.pow((a.getX() - b.getX()),2.0) + Math.pow((a.getY() - b.getY()),2.0),0.5);
     return distancePoint;
   }
 
