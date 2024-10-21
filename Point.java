@@ -46,4 +46,17 @@ public class Point{
     return distancePoint;
   }
 
+  public static boolean isClose(double value1, double value2){
+    if (value1 == value2){
+      return true;
+    }
+    return false;
+  }
+  public boolean isEqual(Point other){
+    if (isClose(this.getX(), other.getX()) && isClose(this.getY(), other.getY()) == true)
+    {
+      return true;
+    }
+    return false;
+  }
 }
