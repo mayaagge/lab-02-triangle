@@ -54,9 +54,9 @@ public class Triangle{
     return false;
    }
   public String getTriangleType(){
-    double distance1 = v1.distanceTo(v2);
-    double distance2 = v2.distanceTo(v3);
-    double distance3 = v3.distanceTo(v1);
+    double distance1 = Point.distance(v1, v2);
+    double distance2 = Point.distance(v1, v3);
+    double distance3 = Point.distance(v2, v3);
     if ((distance1 == distance2) && (distance2 == distance3) && (distance3 = distance1)){
       return "equilateral";
     }
@@ -68,9 +68,9 @@ public class Triangle{
     }
   }
   public double getArea(){
-    double d1 = v1.distanceTo(v2);
-    double d2 = v2.distanceTo(v3);
-    double d3 = v3.distanceTo(v1);
+    double d1 = Point.distance(v1, v2);
+    double d2 = Point.distance(v1, v3);
+    double d3 = Point.distance(v2, v3);
     double sp = this.getPerimeter();
     double area = Math.pow((sp*(sp-d1)*(sp-d2)*(sp-d3)),0.5);
     return area;
