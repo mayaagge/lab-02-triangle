@@ -47,7 +47,7 @@ public class Point{
   }
 
   public static boolean isClose(double value1, double value2){
-    if ((Math.abs(value1-value2))/value1 <= 0.00001){
+    if (((Math.abs(value1-value2))/value1) <= 0.00001){
       return true;
     }
     return false;
