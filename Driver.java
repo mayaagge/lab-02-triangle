@@ -45,6 +45,8 @@ public class Driver{
     t1.setVertex(2, newPoint);
     System.out.println("New triangle coordinates: " + t1.toString());
     System.out.println("New perimeter " + t1.getPerimeter());
+    System.out.println("0.0 and 0.0000001 are close: " + isClose(0.0,0.0000001));
+    System.out.println("0.0 and 0.1 are close: " + isClose(0.0,0.1));
   
     /*************     ADD MORE TEST CASES HERE    *************/
 
