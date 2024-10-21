@@ -45,4 +45,34 @@ public class Triangle{
     double perimeter = Point.distance(v1, v2) + Point.distance(v1, v3) + Point.distance(v2, v3);
     return perimeter;
   }
+  
+  public boolean equals(Triangle other){
+    if (this.getVertex(1) == other.getVertex(1) && this.getVertex(2) == other.getVertex(2) && this.getVertex(3) == other.getVertex(3)){
+      return true;
+    }
+    
+    return false;
+   }
+  public String getTriangleType(){
+    double distance1 = v1.distanceTo(v2);
+    double distance2 = v2.distanceTo(v3);
+    double distance3 = v3.distanceTo(v1);
+    if (distance1 == distance2 && distance2 == distance3 && distance3 = distance1){
+      return "equilateral";
+    }
+    else if (distance1 == distance2 || distance2 == distance3 || distance3 = distance1){
+      return "isoceles";
+    }
+    else{
+      return "scalene";
+    }
+  }
+  public double getArea(){
+    double d1 = v1.distanceTo(v2);
+    double d2 = v2.distanceTo(v3);
+    double d3 = v3.distanceTo(v1);
+    double sp = this.getPerimeter();
+    double area = Math.pow((sp*(sp-d1)*(sp-d2)*(sp-d3)),0.5);
+    return area;
+  }
 }
