@@ -57,10 +57,10 @@ public class Triangle{
     double distance1 = Point.distance(v1, v2);
     double distance2 = Point.distance(v1, v3);
     double distance3 = Point.distance(v2, v3);
-    if ((distance1 == distance2) && (distance2 == distance3) && (distance3 = distance1)){
+    if ((distance1 == distance2) && (distance2 == distance3) && (distance3 == distance1)){
       return "equilateral";
     }
-    else if ((distance1 == distance2) || (distance2 == distance3) || (distance3 = distance1)){
+    else if ((distance1 == distance2) || (distance2 == distance3) || (distance3 == distance1)){
       return "isoceles";
     }
     else{
