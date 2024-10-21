@@ -49,12 +49,16 @@ public class Driver{
     System.out.println("0.0 and 0.1 are close: " + Point.isClose(0.0,0.1));
     System.out.println("The first coordinate of Triangle 1 is equal to the point 0.0,0.0: " + t1.isEqual(p3);
     Triangle t5 = new Triangle(0.0,1.0,-Math.pow(3.0,0.5)*0.05,2.0,-0.5,Math.pow(3.0,0.5)*0.5,-0.5);
-    System.out.println(The triangle is a " + t5.getTriangleType() + "triangle");
-    System.out.println(The triangle is a " + t3.getTriangleType() + "triangle");
+    System.out.println("The triangle is a " + t5.getTriangleType() + "triangle");
+    System.out.println("The triangle is a " + t3.getTriangleType() + "triangle");
     Triangle t6 = new Triangle(0.0,0.0, 5.0, 3.0, 5.0, 3.0);
-    System.out.println(The triangle is a " + t6.getTriangleType() + "triangle");
+    System.out.println("The triangle is a " + t6.getTriangleType() + "triangle");
     Triangle t7 = new Triangle(0.0,0.0, 5.0, 3.0, 5.0, 3.0);
-    System.out.println(
+    System.out.println("This triangle is equal to the previous triangle: " + t7.equals(t6));
+    System.out.println("The area of triangle 1 is " + t1.getArea());
+    System.out.println("The area of triangle 2 is " + t2.getArea());
+    System.out.println("The area of triangle 3 is " + t3.getArea());
+    System.out.println("The area of triangle 4 is " + t4.getArea());
   
     /*************     ADD MORE TEST CASES HERE    *************/
 
