@@ -29,6 +29,7 @@ public class Driver{
     System.out.println("Distance from p1 to p3 is " + distance3 + " which is the same as " + sameDistance3);
     
     // Create Triangle objects and test the methods
+    /*************     ADD MORE TEST CASES HERE    *************/
     Triangle t1 = new Triangle(0.0,0.0,6.0,8.0,0.0,8.0);
     Triangle t2 = new Triangle(p1, p2, p3);
     Triangle t3 = new Triangle(-1.0,0.0,-3.4,5.1,-7.0,6.0);
@@ -47,7 +48,7 @@ public class Driver{
     System.out.println("New perimeter " + t1.getPerimeter());
     System.out.println("0.0 and 0.0000001 are close: " + Point.isClose(0.0,0.0000001));
     System.out.println("0.0 and 0.1 are close: " + Point.isClose(0.0,0.1));
-    System.out.println("The first coordinate of Triangle 1 is equal to the point 0.0,0.0: " + t1.isEqual(p3);
+    System.out.println("The first coordinate of Triangle 1 is equal to the point 0.0,0.0: " + t1.isEqual(p3));
     Triangle t5 = new Triangle(0.0,1.0,-Math.pow(3.0,0.5)*0.05,2.0,-0.5,Math.pow(3.0,0.5)*0.5,-0.5);
     System.out.println("The triangle is a " + t5.getTriangleType() + "triangle");
     System.out.println("The triangle is a " + t3.getTriangleType() + "triangle");
@@ -60,8 +61,6 @@ public class Driver{
     System.out.println("The area of triangle 3 is " + t3.getArea());
     System.out.println("The area of triangle 4 is " + t4.getArea());
   
-    /*************     ADD MORE TEST CASES HERE    *************/
-
   }
 }
 /*
