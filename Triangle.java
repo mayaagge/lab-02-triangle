@@ -47,7 +47,7 @@ public class Triangle{
   }
   
   public boolean equals(Triangle other){
-    if (this.getVertex(1) == other.getVertex(1) && this.getVertex(2) == other.getVertex(2) && this.getVertex(3) == other.getVertex(3)){
+    if (Point.closeTo(this.getVertex(1),other.getVertex(1)) && Point.closeTo(this.getVertex(2),other.getVertex(2)) && Point.closeTo(this.getVertex(3) == other.getVertex(3))){
       return true;
     }
     
