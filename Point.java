@@ -52,7 +52,7 @@ public class Point{
     }
     else if (value1 == 0)
     {
-      if ((value1-value2 == 0))
+      if ((Math.abs(value1-value2))/value1 <= 0.00001)
       {
         return true;
       }
