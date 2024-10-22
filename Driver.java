@@ -50,9 +50,10 @@ public class Driver{
     System.out.println("0.0 and 0.1 are close: " + Point.isClose(0.0,0.1));
     System.out.println("1.0 and 1.000001 are close: " + Point.isClose(1.0,1.000001));
     System.out.println("The first coordinate of Triangle 1 is equal to the point 0.0,0.0: " + (t1.getVertex(1)).isEqual(p3));
-    System.out.println("The first coordinate of Triangle 1 is equal to the point 1.0,0.0: " + (t1.getVertex(1)).isEqual(p3));
+    System.out.println("The first coordinate of Triangle 1 is equal to the point 2.0,10.0: " + (t1.getVertex(1)).isEqual(p2));
     Point p4 = new Point(-3.4,5.1);
-    System.out.println("The second coordinate of Triangle 3 is equal to the point 1.0,0.0: " + (t3.getVertex(2)).isEqual(p4));
+    System.out.println("The second coordinate of Triangle 3 is equal to the point -3.4,5.1: " + (t3.getVertex(2)).isEqual(p4));
+    System.out.println("The second coordinate of Triangle 3 is equal to the point 8.0,8.0: " + (t3.getVertex(2)).isEqual(p1));
     Triangle t5 = new Triangle(0.0,1.0,-Math.pow(3.0,0.5)*0.5,-0.5,Math.pow(3.0,0.5)*0.5,-0.5);
     System.out.println("The triangle is a " + t5.getTriangleType() + " triangle");
     System.out.println("The triangle is a " + t3.getTriangleType() + " triangle");
