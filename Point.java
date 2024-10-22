@@ -61,7 +61,7 @@ public class Point{
     return false;
   }
   public boolean isEqual(Point other){
-    if (isClose(this.getX(), other.getX()) == true && isClose(this.getY(), other.getY()) == true)
+    if ((Point.isClose(this.getX(), other.getX()) == true) && (Point.isClose(this.getY(), other.getY()) == true))
     {
       return true;
     }
