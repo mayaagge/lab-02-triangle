@@ -48,6 +48,7 @@ public class Driver{
     System.out.println("New perimeter " + t1.getPerimeter());
     System.out.println("0.0 and 0.0000001 are close: " + Point.isClose(0.0,0.0000001));
     System.out.println("0.0 and 0.1 are close: " + Point.isClose(0.0,0.1));
+    System.out.println("1.0 and 1.000001 are close: " + Point.isClose(1.0,1.000001));
     System.out.println("The first coordinate of Triangle 1 is equal to the point 0.0,0.0: " + (t1.getVertex(1)).isEqual(p3));
     System.out.println("The first coordinate of Triangle 1 is equal to the point 1.0,0.0: " + (t1.getVertex(1)).isEqual(p3));
     Triangle t5 = new Triangle(0.0,1.0,-Math.pow(3.0,0.5)*0.5,-0.5,Math.pow(3.0,0.5)*0.5,-0.5);
